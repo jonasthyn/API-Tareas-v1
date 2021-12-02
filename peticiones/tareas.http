@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/api/tareas/?page=0&size=1
+
+###
+GET http://localhost:3000/api/tareas/61a7c1acc1627e20523cd133
+
+###
+POST  http://localhost:3000/api/tareas
+Content-Type: application/json  
+
+{
+    "titulo": "Hacer un sitio web con Wix",
+    "descripcion": "Autonomo",
+    "done": true
+}
+
+
+###
+DELETE http://localhost:3000/api/tareas/61a7c1acc1627e20523cd133
+
+###
+GET http://localhost:3000/api/tareas/done
+
+###
+PUT http://localhost:3000/api/tareas/61a7ce21e1614d8d49c094d1
+Content-Type: application/json  
+
+{
+    "titulo": "Hacer un sitio web con Wix (done)"
+   
+}
+
